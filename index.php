@@ -12,7 +12,7 @@ function redirect_devices() {
 		global $play_store_url;
 		header( 'Location: ' . $play_store_url );
 		die( 'Redirecting to <a href="' . $play_store_url . '">' . $play_store_url . '</a>' );
-	} elseif ( check_device("iPhone") || check_device("iPod") ) {
+	} elseif ( check_device("iPhone") || check_device("iPod") || check_device("iPad") ) {
 		global $itunes_url;
 		header( 'Location:' . $itunes_url );
 		die( 'Redirecting to <a href="' . $itunes_url . '">' . $itunes_url . '</a>' );

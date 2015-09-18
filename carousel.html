@@ -41,26 +41,26 @@
             <div class="carousel-caption">
               <h1>Für Android, iOS und bald auch als HTML5 App</h1>
               <p>Damit der Großteil unserer Nutzer sie verwenden kann, gibt es eine App für Android, für iOS und für alle anderen wird es zukünftig auch eine HTML5 App geben.</p>
-			  <p id="android_btns">
+			        <p id="android_btns">
                 <div id="android_btn_grp" class="btn-group" role="group">
                   <a id="android_btn" class="btn btn-lg btn-primary" href="https://play.google.com/store/apps/details?id=de.fau.cs.mad.fablab.android" role="button">
-					<span class="glyphicon glyphicon-download"></span> Hol sie dir für Android</a>
-			    </div>
-				<button id="android_qr_btn" type="button" class="btn btn-lg btn-primary hidden" aria-label="QR Code"
-                  data-toggle="modal" data-target="#QRModal" data-device_target="android" data-device_target_nice="Android">
-				  <span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span>
-				</button>
+                    <span class="glyphicon glyphicon-download"></span> Hol sie dir für Android</a>
+                  <button id="android_qr_btn" type="button" class="btn btn-lg btn-primary hidden" aria-label="QR Code"
+                    data-toggle="modal" data-target="#QRModal" data-device_target="android" data-device_target_nice="Android">
+                    <span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span>
+                  </button>
+                </div>
               </p>
 
-			  <p id="ios_btns">
+			        <p id="ios_btns">
                 <div id="ios_btn_grp" class="btn-group" role="group">
                   <a id="ios_btn" class="btn btn-lg btn-primary" href="https://itunes.apple.com/de/app/fau-fablab/id1037263096" role="button">
-					<span class="glyphicon glyphicon-download"></span> Installier sie auf iOS</a>
-			    </div>
-				<button id="ios_qr_btn" type="button" class="btn btn-lg btn-primary hidden" aria-label="QR Code"
-                  data-toggle="modal" data-target="#QRModal" data-device_target="ios" data-device_target_nice="iOS">
-				  <span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span>
-				</button>
+					          <span class="glyphicon glyphicon-download"></span> Installier sie auf iOS</a>
+                  <button id="ios_qr_btn" type="button" class="btn btn-lg btn-primary hidden" aria-label="QR Code"
+                    data-toggle="modal" data-target="#QRModal" data-device_target="ios" data-device_target_nice="iOS">
+                    <span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span>
+                  </button>
+			          </div>
               </p>
 
             </div>
@@ -207,33 +207,33 @@
 <script>
 // android button
 $("a#android_btn").hover(function() {
-  $("button#android_qr_btn").appendTo($("div#android_btn_grp"));
+  $("div#android_btn_grp").addClass("btn-group");
   $("button#android_qr_btn").removeClass("hidden");
 }, function() {
   $("button#android_qr_btn").addClass("hidden");
-  $("div#android_btn_grp").closest($("button#android_qr_btn")).remove();
+  $("div#android_btn_grp").removeClass("btn-group");
 });
 $("button#android_qr_btn").hover(function() {
-  $("button#android_qr_btn").appendTo($("div#android_btn_grp"));
+  $("div#android_btn_grp").addClass("btn-group");
   $("button#android_qr_btn").removeClass("hidden");
 }, function() {
   $("button#android_qr_btn").addClass("hidden");
-  $("div#android_btn_grp").closest($("button#android_qr_btn")).remove();
+  $("div#android_btn_grp").removeClass("btn-group");
 });
 // ios button
 $("a#ios_btn").hover(function() {
-  $("button#ios_qr_btn").appendTo($("div#ios_btn_grp"));
+  $("div#ios_btn_grp").addClass("btn-group");
   $("button#ios_qr_btn").removeClass("hidden");
 }, function() {
   $("button#ios_qr_btn").addClass("hidden");
-  $("div#ios_btn_grp").closest($("button#ios_qr_btn")).remove();
+  $("div#ios_btn_grp").removeClass("btn-group");
 });
 $("button#ios_qr_btn").hover(function() {
-  $("button#ios_qr_btn").appendTo($("div#ios_btn_grp"));
+  $("div#ios_btn_grp").addClass("btn-group");
   $("button#ios_qr_btn").removeClass("hidden");
 }, function() {
   $("button#ios_qr_btn").addClass("hidden");
-  $("div#ios_btn_grp").closest($("button#ios_qr_btn")).remove();
+  $("div#ios_btn_grp").removeClass("btn-group");
 });
 </script>
 <script>
