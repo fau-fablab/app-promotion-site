@@ -4,7 +4,8 @@ $itunes_url = "https://itunes.apple.com/de/app/fau-fablab/id1037263096";
 
 function check_device($dev) {
 	# if the visiting device is dev, return true
-	return $_GET["dev"] == $dev || strpos($_SERVER['HTTP_USER_AGENT'], $dev);
+    return ( isset($_GET["dev"]) && strtolower($_GET["dev"]) == strtolower($dev) ) ||
+             strpos($_SERVER['HTTP_USER_AGENT'], $dev);
 }
 
 function redirect_devices() {
@@ -19,7 +20,7 @@ function redirect_devices() {
 	}
 }
 
-if ( $_GET["redirect"] != "no" ) {
+if ( !isset($_GET["redirect"]) || strtolower($_GET["redirect"]) != "no" ) {
 	redirect_devices();
 }
 
