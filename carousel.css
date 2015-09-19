@@ -4,9 +4,41 @@
 
 body {
   padding-bottom: 40px;
-  color: #5a5a5a;
+  color: #aaaaaa;
+  background-color: #092125;
 }
 
+.carousel-caption {
+  background-color: rgba(55,55,55,0.5);
+  border-radius: 10px
+}
+
+.btn {
+  background-color: #777777;
+  color: #ffffff;
+  transition: background-color 0.5s;
+}
+.btn:hover {
+  background-color: #163b64;
+  color: #ffffff;
+}
+
+.img-thumbnail {
+    box-shadow:0 0 100px #777777;
+}
+
+hr{
+  border-color: #777777;
+}
+
+a {
+  transition: color 1s;
+  color: #209466;
+}
+a:hover {
+  text-decoration-line: none;
+    color: #ffffff;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
