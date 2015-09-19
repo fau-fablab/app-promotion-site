@@ -64,6 +64,13 @@ a:hover {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
+.navbar-brand img {
+  height: 40px;
+  padding: 0px;
+}
+a.navbar-brand {
+  color: #ffffff
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
