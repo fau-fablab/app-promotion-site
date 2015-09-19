@@ -141,3 +141,42 @@ body {
     font-size: 30px;
     color: #5A5A5A;
 }
+
+/* FLIP SHOPPING CART
+------------------------------------------------- */
+.flip-cart {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+}
+.flip-cart:hover {
+    -webkit-transform: rotate(-140deg);
+    -moz-transform: rotate(-140deg);
+    -o-transform: rotate(-140deg);
+    -ms-transform: rotate(-140deg);
+}
+
+/* IMAGE OVERLAY
+------------------------------------------------- */
+div.image-overlay {
+    position: relative;
+    height: 140px;
+    width: 140px;
+    border: none;
+}
+div.image-overlay img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.image-overlay img.img-overlay {
+    opacity: 0;
+    color: white;
+    -webkit-transition: opacity 2s; /* Safari */
+    transition: opacity 2s;
+}
+div.image-overlay img.img-overlay:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* IE8 */
+}
