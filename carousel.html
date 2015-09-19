@@ -28,11 +28,11 @@
 
     <!-- Navbar
     ================================================== -->
-    <div class="navbar-wrapper">
+    <div class="navbar-wrapper hidden-xs">
       <nav class="navbar navbar-fixed-top">
         <div class="container">
           <div class="navbar-header">
-            <a id="navbar-brand" class="navbar-brand" href="https://fablab.fau.de/">
+            <a id="navbar-brand" class="navbar-brand navbar-brand-max" href="https://fablab.fau.de/">
               <span>
                 <img id="navbar-brand-img" class="img-thumbnail img-circle" src="img/fab_cube.png" alt=""> FAU FabLab App
               </span>
@@ -314,6 +314,16 @@ $("a[href^='#'].scroll-smooth").on('click', function(e) {
      // (default click behaviour)
      window.location.hash = hash;
    });
+});
+</script>
+<script>
+var navbarbrand = $('#navbar-brand');
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 0) {
+    navbarbrand.removeClass("navbar-brand-max");
+  } else {
+    navbarbrand.addClass("navbar-brand-max");
+  }
 });
 </script>
   </body>

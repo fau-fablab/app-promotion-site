@@ -64,12 +64,21 @@ a:hover {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
-.navbar-brand img {
+a.navbar-brand {
+  color: #ffffff;
+  transition: font-size .5s;
+  font-size: large;
+}
+a.navbar-brand img {
+  transition: height .5s;
   height: 40px;
   padding: 0px;
 }
-a.navbar-brand {
-  color: #ffffff
+a.navbar-brand-max {
+  font-size: 40px;
+}
+a.navbar-brand-max img {
+  height: 80px;
 }
 
 
