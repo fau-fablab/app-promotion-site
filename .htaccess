@@ -8,4 +8,4 @@ RedirectMatch 404 ".git"
 RedirectMatch 404 "Vagrantfile$"
 RedirectMatch 404 "README.md$"
 RedirectMatch 404 "(.*).sh$"
-Options -Indexes
+Options -Indexes -FollowSymLinks

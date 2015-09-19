@@ -4,8 +4,10 @@ App Promotion Site
 A site to promote our FabLab App.
 
 But the main function is to redirect users on smart phones to the right app store...
-You will see the website on devices which can't install the app.
-If you want test the redirecting, you can add `?dev=android` to the url or if you don't want to be redirected, add `?redirect=no`.
+You will be redirected to the website on devices which can't install the app.
+
+The redirection is done by the small [`/redirect.php`](redirect.php) script.
+If you want test the redirecting from e.g. your laptop, you can add `/redirect.php?dev=android` to the url.
 
 License
 -------

@@ -20,8 +20,8 @@ function redirect_devices() {
 	}
 }
 
-if ( !isset($_GET["redirect"]) || strtolower($_GET["redirect"]) != "no" ) {
-	redirect_devices();
-}
-
-readfile("./carousel.html");
+# Redirect devices to their stores - if available
+redirect_devices();
+# Otherwise redirect to index.html
+header( 'Location: index.html' );
+die( 'Redirecting to <a href="index.html">index.html</a>' );
