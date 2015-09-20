@@ -193,3 +193,12 @@ div.image-overlay img.img-overlay:hover {
     opacity: 0.5;
     filter: alpha(opacity=50); /* IE8 */
 }
+
+/* DARCULA PRE
+------------------------------------------------- */
+/* nobody wants a white terminal @,@ */
+pre.darcula {
+  color: #F5F5F5;
+  background-color: #333;
+  border-color: #777777;
+}
