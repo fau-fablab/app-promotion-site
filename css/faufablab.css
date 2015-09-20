@@ -1,7 +1,5 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
   color: #aaaaaa;
   background-color: #092125;
@@ -12,7 +10,9 @@ body {
   border-radius: 10px
 }
 
-//buttons
+/* BUTTONS
+---------- */
+/* change colors of used buttons (default, primary and danger) */
 .btn {
   background-color: #777777;
   color: #ffffff;
@@ -21,6 +21,11 @@ body {
   -o-transition: background-color 0.5s;
   -ms-transition: background-color 0.5s;
   transition: background-color 0.5s;
+  -webkit-transition: border-color 0.5s;
+  -moz-transition: border-color 0.5s;
+  -o-transition: border-color 0.5s;
+  -ms-transition: border-color 0.5s;
+  transition: border-color 0.5s;
 }
 .btn:hover {
   color: #ffffff;
@@ -37,7 +42,9 @@ body {
   background-color: #661c1b;
 }
 
-//modal
+/* MODAL
+-------- */
+/* don't dazzle! - use our fancy[TM] colors */
 .modal-content {
   background-color: #092125;
 }
@@ -70,9 +77,8 @@ a:hover {
     color: #ffffff;
 }
 
-/* CUSTOMIZE THE NAVBAR
+/* CUSTOMIZE CUSTOMIZED NAVBAR
 -------------------------------------------------- */
-
 a.navbar-brand {
   color: #ffffff;
   -webkit-transition: font-size .5s;
@@ -101,7 +107,8 @@ a.navbar-brand-max img {
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
-
+/* the images don't have the right(?) size -> frickeln -> obacht, zerfällt, beim schief anschauen */
+/* TODO: images are compressed on small monitors */
 .carousel-inner > .item > img {
   height: unset;
   min-height: 500px;
@@ -118,6 +125,7 @@ a.navbar-brand-max img {
 
 /* FLIP SHOPPING CART
 ------------------------------------------------- */
+/* As in android app ^.^ */
 .flip-cart {
   /* backward */
   -webkit-transition: transform .5s ease-in-out;
@@ -147,6 +155,7 @@ a.navbar-brand-max img {
 
 /* IMAGE OVERLAY
 ------------------------------------------------- */
+/* -> hart(!) hin gefrickelt - ich weiß nicht, warum das so geht */
 div.image-overlay {
     position: relative;
     height: 140px;
