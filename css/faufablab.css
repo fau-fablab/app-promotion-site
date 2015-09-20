@@ -7,17 +7,19 @@ body {
 
 .carousel-caption {
   background-color: rgba(55,55,55,0.5);
-  border-radius: 10px
+  border-radius: 10px;
 }
 
 /* BUTTONS
 ---------- */
 /* change colors of used buttons (default, primary and danger) */
 /* default */
-.btn-default {
+.btn-default,
+.label-default {
   color: #aaaaaa;
   background-color: rgba(0,0,0,0);
   border-color: #aaaaaa;
+  border: 1px solid;
 }
 .btn-default:hover,
 .btn-default:active,
@@ -27,7 +29,8 @@ body {
   border-color: #777777;
 }
 /* primary */
-.btn-primary {
+.btn-primary,
+.label-primary {
   color: #ffffff;
   background-color: #777777;
   border-color: #163b64;
@@ -40,7 +43,8 @@ body {
   border-color: #163b64;
 }
 /* danger */
-.btn-danger {
+.btn-danger,
+.label-danger {
   color: #aaaaaa;
   background-color: #661c1b;
   border-color: #661c1b;
