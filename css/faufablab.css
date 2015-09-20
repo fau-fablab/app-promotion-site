@@ -92,7 +92,8 @@ a:hover {
 
 /* CUSTOMIZE CUSTOMIZED NAVBAR
 -------------------------------------------------- */
-a.navbar-brand {
+a.navbar-brand,
+.masthead-brand {
   color: #ffffff;
   -webkit-transition: font-size .5s;
   -moz-transition: font-size .5s;
@@ -101,7 +102,8 @@ a.navbar-brand {
   transition: font-size .5s;
   font-size: large;
 }
-a.navbar-brand img {
+a.navbar-brand img,
+.masthead-brand img {
   -webkit-transition: height .5s;
   -moz-transition: height .5s;
   -o-transition: height .5s;
