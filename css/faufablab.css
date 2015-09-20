@@ -125,8 +125,8 @@ a.navbar-brand-max img {
 /* the images don't have the right(?) size -> frickeln -> obacht, zerfällt, beim schief anschauen */
 /* TODO: images are compressed on small monitors */
 .carousel-inner > .item > img {
-  height: unset;
   min-height: 500px;
+  height: unset;
 }
 
 

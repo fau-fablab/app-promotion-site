@@ -60,7 +60,7 @@
             <div class="carousel-caption">
               <h1>Für Android, iOS und bald auch als HTML5 App</h1>
               <p>Damit der Großteil unserer Nutzer sie verwenden kann, gibt es eine App für Android, für iOS und für alle anderen wird es zukünftig auch eine HTML5 App geben.</p>
-			        <p id="android_btns">
+              <div id="android_btns">
                 <div id="android_btn_grp" class="" role="group">
                   <a id="android_btn" class="btn btn-lg btn-primary" href="https://play.google.com/store/apps/details?id=de.fau.cs.mad.fablab.android" role="button">
                     <span class="glyphicon glyphicon-download"></span> Hol sie dir für Android</a>
@@ -69,9 +69,9 @@
                     <span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span>
                   </button>
                 </div>
-              </p>
-
-			        <p id="ios_btns">
+              </div>
+              <br />
+              <div id="ios_btns">
                 <div id="ios_btn_grp" class="" role="group">
                   <a id="ios_btn" class="btn btn-lg btn-primary" href="https://itunes.apple.com/de/app/fau-fablab/id1037263096" role="button">
 					          <span class="glyphicon glyphicon-download"></span> Installier sie auf iOS</a>
@@ -79,9 +79,9 @@
                     data-toggle="modal" data-target="#QRModal" data-device_target="ios" data-device_target_nice="iOS">
                     <span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span>
                   </button>
-			          </div>
-              </p>
-
+                </div>
+              </div>
+              <br />
             </div>
           </div>
         </div>
@@ -196,7 +196,7 @@
             <p class="lead">Das Ziel war es, sich an die gut überlegten Design Richtlinien der App System Entwickler zu halten. Obwohl man denken könnte, dass schon alles vorgegeben ist, ist die Umsetzung oft gar nicht so einfach. Dennoch ist es gelungen, sich bei der Android App an die neuen Android 5 Material Design Richtlinien zu halten und bei der iOS App an Apples Guidlines. Die zur Verfügung stehenden Freiheiten wurden kreativ benutzt und das Ergebnis ist überzeugend.</p>
           </div>
           <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" src="" alt="Screenshots coming soon...">
+            <img class="featurette-image img-responsive center-block" src="img/noimage.png" alt="Screenshots coming soon...">
           </div>
         </div>
 
@@ -225,7 +225,7 @@ cd fablab-android
 
       <!-- QR Codes
       ================================================== -->
-      <div class="modal fade" id="QRModal" tabindex="-1" role="dialog" aria-labelledby="QR Code ModalLabel">
+      <div class="modal fade" id="QRModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
