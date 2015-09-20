@@ -13,33 +13,42 @@ body {
 /* BUTTONS
 ---------- */
 /* change colors of used buttons (default, primary and danger) */
-.btn {
-  background-color: #777777;
-  color: #ffffff;
-  -webkit-transition: background-color 0.5s;
-  -moz-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  -ms-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-  -webkit-transition: border-color 0.5s;
-  -moz-transition: border-color 0.5s;
-  -o-transition: border-color 0.5s;
-  -ms-transition: border-color 0.5s;
-  transition: border-color 0.5s;
-}
-.btn:hover {
-  color: #ffffff;
+/* default */
+.btn-default {
+  color: #aaaaaa;
+  background-color: rgba(0,0,0,0);
+  border-color: #aaaaaa;
 }
 .btn-default:hover,
-.btn-primary:hover {
-  background-color: #163b64;
+.btn-default:active,
+.btn-default:focus {
+  color: #ffffff;
+  background-color: #777777;
+  border-color: #777777;
 }
+/* primary */
+.btn-primary {
+  color: #ffffff;
+  background-color: #777777;
+  border-color: #163b64;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  color: #ffffff;
+  background-color: #163b64;
+  border-color: #163b64;
+}
+/* danger */
 .btn-danger {
+  color: #aaaaaa;
   background-color: #661c1b;
   border-color: #661c1b;
 }
 .btn-danger:hover {
-  background-color: #661c1b;
+  color: #aaaaaa;
+  background-color: #430c0b;
+  border-color: #661c1b;
 }
 
 /* MODAL
