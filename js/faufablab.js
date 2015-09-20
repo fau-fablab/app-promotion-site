@@ -48,7 +48,6 @@ $('#QRModal').on('show.bs.modal', function (event) {
   var modal = $(this);
   modal.find('.modal-body img#qr_code').attr('src', 'img/' + device_target + '-qr.png');
   modal.find('.modal-body img#qr_code').attr('alt', 'The QR Code for ' + device_target_nice + ' could not be displayed');
-  modal.find('.modal-title').text('Get App for ' + device_target_nice);
 })
 
 /* SMOOTH SCROLLING
