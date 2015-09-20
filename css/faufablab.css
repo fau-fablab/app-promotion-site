@@ -1,0 +1,173 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #aaaaaa;
+  background-color: #092125;
+}
+
+.carousel-caption {
+  background-color: rgba(55,55,55,0.5);
+  border-radius: 10px
+}
+
+//buttons
+.btn {
+  background-color: #777777;
+  color: #ffffff;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  -ms-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+.btn:hover {
+  color: #ffffff;
+}
+.btn-default:hover,
+.btn-primary:hover {
+  background-color: #163b64;
+}
+.btn-danger {
+  background-color: #661c1b;
+  border-color: #661c1b;
+}
+.btn-danger:hover {
+  background-color: #661c1b;
+}
+
+//modal
+.modal-content {
+  background-color: #092125;
+}
+.modal .modal-header,
+.modal .modal-footer {
+  border-color: #777777;
+}
+.modal .modal-header button {
+  color: #ffffff;
+}
+
+.glow {
+    box-shadow:0 0 100px #777777;
+}
+
+hr{
+  border-color: #777777;
+}
+
+a {
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -o-transition: color 1s;
+  -ms-transition: color 1s;
+  transition: color 1s;
+  color: #209466;
+}
+a:hover {
+  text-decoration-line: none;
+    color: #ffffff;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+a.navbar-brand {
+  color: #ffffff;
+  -webkit-transition: font-size .5s;
+  -moz-transition: font-size .5s;
+  -o-transition: font-size .5s;
+  -ms-transition: font-size .5s;
+  transition: font-size .5s;
+  font-size: large;
+}
+a.navbar-brand img {
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+  -o-transition: height .5s;
+  -ms-transition: height .5s;
+  transition: height .5s;
+  height: 40px;
+  padding: 0px;
+}
+a.navbar-brand-max {
+  font-size: 40px;
+}
+a.navbar-brand-max img {
+  height: 80px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+.carousel-inner > .item > img {
+  height: unset;
+  min-height: 500px;
+}
+
+
+/* LARGE NEXT BUTTONS
+------------------------------------------------- */
+.next-button span.glyphicon {
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #5A5A5A;
+}
+
+/* FLIP SHOPPING CART
+------------------------------------------------- */
+.flip-cart {
+  /* backward */
+  -webkit-transition: transform .5s ease-in-out;
+  -moz-transition: transform .5s cubic-bezier(.5,-.5,.875,.5);
+  -o-transition: transform .5s cubic-bezier(.5,-.5,.875,.5);
+  -ms-transition: transform .5s cubic-bezier(.5,-.5,.875,.5);
+  transition: transform .5s cubic-bezier(.5,-.5,.875,.5);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.flip-cart:hover {
+  /* forward */
+  -webkit-transition: transform .5s ease-in-out; /* bezier out of range not supported */
+  -moz-transition: transform .5s cubic-bezier(.125,.5,.5,1.5);
+  -o-transition: transform .5s cubic-bezier(.125,.5,.5,1.5);
+  -ms-transition: transform .5s cubic-bezier(.125,.5,.5,1.5);
+  transition: transform .5s cubic-bezier(.125,.5,.5,1.5);
+  -webkit-transform: rotate(-140deg);
+  -moz-transform: rotate(-140deg);
+  -o-transform: rotate(-140deg);
+  -ms-transform: rotate(-140deg);
+  transform: rotate(-140deg);
+}
+
+/* IMAGE OVERLAY
+------------------------------------------------- */
+div.image-overlay {
+    position: relative;
+    height: 140px;
+    width: 140px;
+    border: none;
+}
+div.image-overlay img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+div.image-overlay img.img-overlay {
+    opacity: 0;
+    color: white;
+    -webkit-transition: opacity 2s;
+    -moz-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    -ms-transition: opacity 2s;
+    transition: opacity 2s;
+}
+div.image-overlay img.img-overlay:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* IE8 */
+}

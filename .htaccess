@@ -8,5 +8,8 @@ RedirectMatch 404 ".git"
 RedirectMatch 404 "Vagrantfile$"
 RedirectMatch 404 "README.md$"
 RedirectMatch 404 "(.*).sh$"
+
+#ErrorDocument 404 ./index.html
+
 Options -Indexes
 DirectoryIndex index.html
