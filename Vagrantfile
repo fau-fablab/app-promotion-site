@@ -55,6 +55,6 @@ Vagrant.configure(2) do |config|
   # information on available options.
   
   config.vm.provision "shell" do |foobar|
-    foobar.path = "./install.sh"
+    foobar.path = "./setup.sh"
   end
 end
